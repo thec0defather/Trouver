@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.thecodefather.Fragments.Browse;
+import com.thecodefather.Helpers.CustomViewPager;
 
 
 public class Pilot extends Activity implements ActionBar.TabListener {
@@ -33,7 +34,7 @@ public class Pilot extends Activity implements ActionBar.TabListener {
     /**
      * The {@link ViewPager} that will host the section contents.
      */
-    ViewPager mViewPager;
+    CustomViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +55,9 @@ public class Pilot extends Activity implements ActionBar.TabListener {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.pager);
+        mViewPager = (CustomViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+        mViewPager.setPagingEnabled(false);
 
         // When swiping between different sections, select the corresponding
         // tab. We can also use ActionBar.Tab#select() to do this if we have
@@ -67,10 +69,7 @@ public class Pilot extends Activity implements ActionBar.TabListener {
             }
         });
 
-        int [] titleImages = {R.drawable.create, R.drawable.browse,
-                R.drawable.user, R.drawable.settings};
-        String [] titles = {"create", "browse",
-                "user", "settings"};
+        String [] titles = {"create", "browse","user", "settings"};
 
         // For each of the sections in the app, add a tab to the action bar.
         for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {

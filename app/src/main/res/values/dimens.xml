@@ -5,8 +5,12 @@
     <dimen name="activity_padding">15dp</dimen>
 
     <dimen name="between_element_padding">14dp</dimen>
+    <dimen name="between_element_padding_2">10dp</dimen>
     <dimen name="between_element_padding_small">3dp</dimen>
-    <dimen name="element_in_linearlayout_box">10dp</dimen>
+    <dimen name="element_in_linearlayout_box">8dp</dimen>
+    <dimen name="text_size_2">16sp</dimen>
     <dimen name="text_size">20sp</dimen>
+    <dimen name="small_icon">40dp</dimen>
+    <dimen name="small_icon_2">25dp</dimen>
 
 </resources>

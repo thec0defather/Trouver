@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Trouver</string>
+    <string name="app_name">trouver</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
@@ -15,5 +15,51 @@
     <string name="x">X</string>
     <string name="rating">Rating: </string>
     <string name="hashtags">Hashtags </string>
+    <string name="distance">Distance </string>
+    <string name="hashtag">#hashtags</string>
+
+    <string name="sign_up_text">Register</string>
+    <string name="sign_up_bold_text"><b>Sign Up</b></string>
+    <string name="sign_in_text">Sign in</string>
+    <string name="signing_in_text">Logging In...</string>
+    <string name="sign_in_bold_text"><b>Sign in</b></string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="no_acct_text_0">No acct?</string>
+    <string name="no_acct_text"><b>Register.</b></string>
+    <string name="have_acct_text">Have account? <b>Sign In.</b></string>
+    <string name="forgot_pass_text">Forgot Pass?</string>
+    <string name="venue_inst_text">Enter your current location/venue then take a photo and/or video</string>
+    <string name="hashtag_inst_text">Enter words you want as hashtags</string>
+    <string name="text_event">Event / Location</string>
+    <string name="text_event_type">Event Type</string>
+    <string name="text_genre">Genre</string>
+    <string name="text_rating">Rating</string>
+    <string name="text_hashtag">ashTags</string>
+    <string name="text_hashtag2">#HashTags (Separate by a space)</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_video">Video</string>
+    <string name="sign_out_text">Sign Out</string>
+    <string name="title_activity_test">test</string>
+    <string name="venue_text">Venue</string>
+    <string name="genre_text">Genre</string>
+    <string name="photos_text">Photos</string>
+    <string name="video_text">Video</string>
+    <string name="rating_text">Rating</string>
+
+    <string name="post_text">POST</string>
+    <string name="access_text">Access</string>
+    <string name="title_activity_main">Main</string>
+    <string name="username_text">Username</string>
+    <string name="rating_inst_text">Rate this place</string>
+    <string name="x_text">X</string>
+    <string name="reset_txt">Reset</string>
+    <string name="browse_txt">BROWSE</string>
+    <string name="search_criteria"><b>Search criteria</b></string>
+    <string name="venues_text">Venue(s):</string>
+    <string name="distance_text">Distance: </string>
+    <string name="hashtags_text">Hashtag(s): </string>
+    <string name="myposts"><b>My Posts</b></string>
+    <string name="myfavs"><b>My Favorites</b></string>
 
 </resources>

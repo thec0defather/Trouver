@@ -26,12 +26,15 @@
                 android:orientation="horizontal"
                 android:padding="@dimen/element_in_linearlayout_box"
                 android:layout_marginBottom="@dimen/between_element_padding_small"
+                android:id="@+id/cafe_layout"
                 >
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_width="@dimen/small_icon"
+                    android:layout_height="@dimen/small_icon"
+                    android:src="@drawable/cafe"
+                    android:id="@+id/cafe_id"
+                    />
 
             </LinearLayout>
 
@@ -42,12 +45,15 @@
                 android:orientation="horizontal"
                 android:padding="@dimen/element_in_linearlayout_box"
                 android:layout_marginBottom="@dimen/between_element_padding_small"
+                android:id="@+id/meal_takeaway_layout"
                 >
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_width="@dimen/small_icon"
+                    android:layout_height="@dimen/small_icon"
+                    android:src="@drawable/chinese"
+                    android:id="@+id/meal_takeaway_id"
+                    />
 
             </LinearLayout>
 
@@ -58,12 +64,15 @@
                 android:orientation="horizontal"
                 android:padding="@dimen/element_in_linearlayout_box"
                 android:layout_marginBottom="@dimen/between_element_padding_small"
+                android:id="@+id/diner_layout"
                 >
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_width="@dimen/small_icon"
+                    android:layout_height="@dimen/small_icon"
+                    android:src="@drawable/diner"
+                    android:id="@+id/diner_id"
+                    />
 
             </LinearLayout>
 
@@ -74,12 +83,34 @@
                 android:orientation="horizontal"
                 android:padding="@dimen/element_in_linearlayout_box"
                 android:layout_marginBottom="@dimen/between_element_padding_small"
+                android:id="@+id/bar_layout"
                 >
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_width="@dimen/small_icon"
+                    android:layout_height="@dimen/small_icon"
+                    android:src="@drawable/shotglass"
+                    android:id="@+id/bar_id"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:orientation="horizontal"
+                android:padding="@dimen/element_in_linearlayout_box"
+                android:layout_marginBottom="@dimen/between_element_padding_small"
+                android:id="@+id/night_club_layout"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/small_icon"
+                    android:layout_height="@dimen/small_icon"
+                    android:src="@drawable/nightclub"
+                    android:id="@+id/night_club_id"
+                    />
 
             </LinearLayout>
 
@@ -92,23 +123,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/custom_border_3"
+        android:padding="5dp">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/between_element_padding"
             android:gravity="center"
-            android:hint="Distance" />
-
+            android:id="@+id/browse_distance"
+            android:hint="@string/distance" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/between_element_padding"
-            android:gravity="center"
-            android:hint="#hashtags" />
-
+            android:gravity="center|bottom"
+            android:id="@+id/browse_hashtag_editText"
+            android:hint="@string/hashtag"
+            android:textSize="@dimen/text_size_2"
+            />
 
         <!-- RATING BAR -->
         <LinearLayout
@@ -122,16 +155,16 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/rating"
-                android:textSize="@dimen/text_size" />
+                android:textSize="@dimen/text_size_2" />
 
             <SeekBar
-                android:id="@+id/rating_seekBar"
+                android:id="@+id/ratingSeekBar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <TextView
-                android:id="@+id/seekbar_value"
+                android:id="@+id/seekbarValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -139,7 +172,12 @@
                 android:textSize="@dimen/text_size" />
         </LinearLayout>
 
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/browse_search_action"
+            android:text="search"/>
     </LinearLayout>
 
 
